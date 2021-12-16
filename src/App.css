@@ -1,0 +1,13 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  font-size: 2.5rem;
+}
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

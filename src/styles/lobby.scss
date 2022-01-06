@@ -1,0 +1,49 @@
+.lobby-container {
+  background: url('/src/img/lobby_bg.png') no-repeat fixed center;
+  width: 100%;
+  height: 100%;
+}
+.lobby-content {
+  height: 100%;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  a {
+    color: goldenrod;
+    font-size: 2rem;
+    font-weight: 800;
+    background: brown;
+    padding: 0.75rem;
+    cursor: pointer;
+    border-radius: 16px;
+    width: 14rem;
+    text-decoration: none;
+    text-align: center;
+  }
+}
+.game-header {
+  grid-column: 1 / span 3;
+  h1 {
+    color: gold;
+    font-size: 3rem;
+    margin: 4rem;
+  }
+}
+.player-container {
+  display: flex;
+  justify-content: center;
+  div {
+    background: brown;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 16px 16px 0 0;
+  }
+}
+.buttons-container {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: end;
+  gap: 1rem;
+}

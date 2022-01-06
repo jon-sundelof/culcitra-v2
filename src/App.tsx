@@ -1,13 +1,14 @@
 import './styles/app.scss';
+import Lobby from './pages/Lobby';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <h1>Culcitra V2</h1>
-        <span>First Commit - Remember this day</span>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Lobby />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

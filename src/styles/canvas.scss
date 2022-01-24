@@ -1,0 +1,28 @@
+.canvas-container {
+  height: 100%;
+  background: chocolate;
+}
+
+.canvas-content {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(24, 1fr);
+}
+
+.player-hand-item {
+  grid-row-start: 23;
+  grid-column: 10 / span 2;
+  align-self: end;
+  justify-self: center;
+}
+.sidebar-item {
+  grid-row: 4 / span 16;
+  grid-column: 1 / span 2;
+  //   grid-row-start: 2 / span 3;
+}
+
+.sidebar {
+  background: rgb(131, 108, 79);
+  height: 100%;
+}

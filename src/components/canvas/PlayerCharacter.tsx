@@ -1,5 +1,5 @@
 const PlayerCharacter = () => {
-  return <div>Play Char</div>;
+  return <div>Play Chararcter container</div>;
 };
 
 export default PlayerCharacter;

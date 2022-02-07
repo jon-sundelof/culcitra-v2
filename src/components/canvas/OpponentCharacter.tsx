@@ -1,5 +1,5 @@
 const OpponentCharacter = () => {
-  return <div>Opp Char</div>;
+  return <div>Opp Chararcter container</div>;
 };
 
 export default OpponentCharacter;

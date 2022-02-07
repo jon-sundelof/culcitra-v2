@@ -22,10 +22,18 @@ const Canvas: React.FunctionComponent<CanvasProps> = (
         <div className='sidebar-item'>
           <SideBar />
         </div>
-        <EndRoundBtn />
-        <OpponentHand />
-        <OpponentCharacter />
-        <PlayerCharacter />
+        <div className='end-round-btn-item'>
+          <EndRoundBtn />
+        </div>
+        <div className='opponent-hand-item'>
+          <OpponentHand />
+        </div>
+        <div className='opponent-character-item'>
+          <OpponentCharacter />
+        </div>
+        <div className='player-character-item'>
+          <PlayerCharacter />
+        </div>
       </div>
     </main>
   );

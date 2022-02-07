@@ -4,25 +4,151 @@
 }
 
 .canvas-content {
+  overflow: hidden;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(24, 1fr);
   grid-template-rows: repeat(24, 1fr);
 }
 
-.player-hand-item {
-  grid-row-start: 23;
-  grid-column: 10 / span 2;
-  align-self: end;
-  justify-self: center;
-}
+/* Sidebar Section */
 .sidebar-item {
   grid-row: 4 / span 16;
-  grid-column: 1 / span 2;
-  //   grid-row-start: 2 / span 3;
+  grid-column: 1 / span 4;
+  transform: translateX(-70%);
+
+  &::hover {
+    background: red;
+  }
 }
 
 .sidebar {
+  text-align: right;
+  width: 100%;
+  height: 100%;
   background: rgb(131, 108, 79);
+  border: 2px solid black;
+  &::hover {
+    background: red !important;
+  }
+}
+.sidebar-item:hover {
+  transition: transform 1s ease-in-out;
+  transform: translateX(2%);
+}
+/* ******************* */
+
+/* Player-Hand section */
+.player-hand-item {
+  grid-row: 20 / 25;
+  grid-column: 8 / 17;
+  justify-self: center;
+  width: 100%;
+  background: coral;
+}
+.player-hand-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  transform: skew(20deg);
+
+  :hover {
+    cursor: pointer;
+    background: red;
+    transform: translateY(-60%);
+    width: 25%;
+    height: 150%;
+  }
+}
+.player-card {
+  text-align: center;
+  background: gray;
+  border: 2px solid black;
+  height: 100%;
+  width: 15%;
+  border-radius: 16px;
+  margin: 0 -70px 0 0;
+  transform: translateY(50px);
+
+  &::hover {
+    background: red !important;
+  }
+}
+/* ******************* */
+
+/* Opponent hand section */
+.opponent-hand-item {
+  grid-row: 1 / 5;
+  grid-column: 8 / 17;
+  justify-self: center;
+  width: 100%;
+  background: coral;
+  .opponent-hand-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    // transform: skew(180deg);
+  }
+  .opponent-card {
+    text-align: center;
+    background: gray;
+    border: 2px solid black;
+    height: 100%;
+    width: 15%;
+    border-radius: 16px;
+    margin: 0 -8% 0 0;
+    // transform: translateZ(180deg);
+  }
+}
+/* ******************* */
+
+/* player character section */
+.player-character-item {
+  grid-row: 18 / 25;
+  grid-column: 18 / 24;
+  background: cornflowerblue;
+  width: 100%;
   height: 100%;
 }
+/* ******************* */
+
+/* opponent character section */
+.opponent-character-item {
+  grid-row: 1 / 7;
+  grid-column: 18 / 24;
+  background: cornflowerblue;
+  width: 100%;
+  height: 100%;
+}
+/* ******************* */
+
+/* End round btn section */
+.end-round-btn-item {
+  grid-row: 12 / span 2;
+  grid-column: 23 / 25;
+  transform: translateX(-10%);
+}
+.end-round-btn {
+  width: 100%;
+  height: 100%;
+  background-color: goldenrod;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  .end-btn-circle {
+    width: 80%;
+    height: 60%;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: red;
+  }
+}
+/* ******************* */
